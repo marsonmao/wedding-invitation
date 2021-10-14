@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/wedding-invitation/static/css/main.23d54f9a.chunk.css",
-    "main.js": "/wedding-invitation/static/js/main.1682fd71.chunk.js",
-    "main.js.map": "/wedding-invitation/static/js/main.1682fd71.chunk.js.map",
+    "main.js": "/wedding-invitation/static/js/main.cbd5b02a.chunk.js",
+    "main.js.map": "/wedding-invitation/static/js/main.cbd5b02a.chunk.js.map",
     "runtime-main.js": "/wedding-invitation/static/js/runtime-main.890177b0.js",
     "runtime-main.js.map": "/wedding-invitation/static/js/runtime-main.890177b0.js.map",
     "static/js/2.d22cf845.chunk.js": "/wedding-invitation/static/js/2.d22cf845.chunk.js",
@@ -19,6 +19,6 @@
     "static/js/runtime-main.890177b0.js",
     "static/js/2.d22cf845.chunk.js",
     "static/css/main.23d54f9a.chunk.css",
-    "static/js/main.1682fd71.chunk.js"
+    "static/js/main.cbd5b02a.chunk.js"
   ]
 }
