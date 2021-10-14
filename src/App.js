@@ -91,7 +91,7 @@ const classes = {
   `,
   logo: css`
     position: absolute;
-    top: 133px;
+    top: 163px;
     left: 545px;
     width: 110px;
     height: 110px;
