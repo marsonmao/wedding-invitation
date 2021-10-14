@@ -11,3 +11,45 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face {
+  font-family: 'NotoSerifTC';
+  src: local('NotoSerifTC'), url(./fonts/NotoSerifTC-ExtraLight.otf) format('opentype');
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: 'NotoSerifTC';
+  src: local('NotoSerifTC'), url(./fonts/NotoSerifTC-Light.otf) format('opentype');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'NotoSerifTC';
+  src: local('NotoSerifTC'), url(./fonts/NotoSerifTC-Regular.otf) format('opentype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'NotoSerifTC';
+  src: local('NotoSerifTC'), url(./fonts/NotoSerifTC-Medium.otf) format('opentype');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'NotoSerifTC';
+  src: local('NotoSerifTC'), url(./fonts/NotoSerifTC-SemiBold.otf) format('opentype');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'NotoSerifTC';
+  src: local('NotoSerifTC'), url(./fonts/NotoSerifTC-Bold.otf) format('opentype');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'NotoSerifTC';
+  src: local('NotoSerifTC'), url(./fonts/NotoSerifTC-Black.otf) format('opentype');
+  font-weight: 900;
+}
