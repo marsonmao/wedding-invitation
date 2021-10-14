@@ -5,7 +5,7 @@ import { ReactComponent as Ohm } from './ohm_tamil.svg';
 function App() {
   return (
     <div className={classes.root}>
-      <img src={'wed_inv.png'} className={classes.image} alt="-" />
+      <img src={'wedding-invitation/wed_inv.png'} className={classes.image} alt="-" />
       <div className={classes.logoMask}></div>
       <Ohm className={classes.logo} />
       <div className={classes.centerBlock}>
