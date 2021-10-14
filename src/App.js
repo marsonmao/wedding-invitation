@@ -15,13 +15,14 @@ function App() {
             {/* <span className={classes.title1}>新郎</span> */}
             <span className={classes.text1}>毛璽樹</span>
             {/* <span className={classes.title2}>男方家長</span> */}
-            <span className={classes.text2}>毛佛南　韓綺芸</span>
+            <span className={classes.text2}>毛佛南-韓綺芸</span>
           </div>
+          <div className={classes.topSectionCellGap} />
           <div className={classes.topSectionCell}>
             {/* <span className={classes.title1}>新娘</span> */}
             <span className={classes.text1}>黃詩雅</span>
             {/* <span className={classes.title2}>女方家長</span> */}
-            <span className={classes.text2}>黃永祥　蘇靖園</span>
+            <span className={classes.text2}>黃永祥-蘇靖園</span>
           </div>
         </div>
         <div className={classes.divider}></div>
@@ -44,34 +45,37 @@ const gold = '#e2c08b';
 const opacity = 0.99;
 
 const classes = {
-  title1: css`
-    font-size: 18px;
-    color: ${gold};
-    font-weight: 400;
-  `,
+  // title1: css`
+  //   font-size: 18px;
+  //   color: ${gold};
+  //   font-weight: 400;
+  // `,
   text1: css`
-    font-size: 24px;
+    font-size: 34px;
     color: ${gold};
-    font-weight: 600;
+    font-weight: 500;
     line-height: 36px;
+    letter-spacing: 2px;
     margin-bottom: 48px;
   `,
-  title2: css`
-    font-size: 18px;
-    color: ${gold};
-    font-weight: 400;
-  `,
+  // title2: css`
+  //   font-size: 18px;
+  //   color: ${gold};
+  //   font-weight: 400;
+  // `,
   text2: css`
-    font-size: 24px;
+    font-size: 32px;
     color: ${gold};
-    font-weight: 300;
+    font-weight: 200;
     line-height: 36px;
+    letter-spacing: 2px;
   `,
   text3: css`
-    font-size: 24px;
+    font-size: 28px;
     color: ${gold};
-    font-weight: 300;
+    font-weight: 200;
     line-height: 40px;
+    letter-spacing: 2px;
   `,
   ////
   root: css`
@@ -143,8 +147,13 @@ const classes = {
     justify-content: flex-start;
     align-items: center;
   `,
+  topSectionCellGap: css`
+    width: 48px;
+    height: 8px;
+    flex-shrink: 0;
+  `,
   divider: css`
-    width: 446px;
+    width: 100%;
     height: 1px;
     background-color: ${gold};
     margin-top: 50px;
