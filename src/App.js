@@ -2,10 +2,12 @@ import './App.css';
 import { css } from "@emotion/css";
 import { ReactComponent as Ohm } from './ohm_tamil.svg';
 
+const bg_src = process.env.NODE_ENV === 'development' ? 'wedding-invitation/wed_inv.png' : 'wed_inv.png';
+
 function App() {
   return (
     <div className={classes.root}>
-      <img src={'wedding-invitation/wed_inv.png'} className={classes.image} alt="-" />
+      <img src={bg_src} className={classes.image} alt="-" />
       <div className={classes.logoMask}></div>
       <Ohm className={classes.logo} />
       <div className={classes.centerBlock}>
