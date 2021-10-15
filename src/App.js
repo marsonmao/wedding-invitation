@@ -34,16 +34,16 @@ function App() {
         <div className={classes.bottomSection}>
           <div className={classes.text3Wrap}>
             <span className={cx(classes.text3, classes.text3Number, classes.text3Space1)}>2021.12.12</span>
-            <span className={cx(classes.text3)}>優聖美地</span>
           </div>
           <div className={classes.text3Wrap}>
-            <span className={cx(classes.text3, classes.text3Number, classes.text3Space2)}>11</span>
-            <span className={cx(classes.text3, classes.text3Space2)}>證婚</span>
-            <span className={cx(classes.text3, classes.text3Number, classes.text3Space2)}>12</span>
-            <span className={cx(classes.text3)}>吃飯</span>
+            <span className={cx(classes.text3, classes.text3Number, classes.text3Space2)}>11:00</span>
+            <span className={cx(classes.text3, classes.text3Space2, classes.text3Space3)}>證婚</span>
+            <span className={cx(classes.text3, classes.text3Number, classes.text3Space2)}>12:00</span>
+            <span className={cx(classes.text3)}>吃喝</span>
           </div>
           <span className={classes.text3Margin} />
-          <span className={classes.text4}>新北市新店區屈尺里石厝路十號</span>
+          <span className={cx(classes.text4)}>優聖美地</span>
+          <span className={cx(classes.text4)}>新北市新店區屈尺里石厝路十號</span>
           <span className={cx(classes.text4, classes.text4Number)}>2666-3507</span>
         </div>
       </div>
@@ -109,6 +109,9 @@ const classes = {
   `,
   text3Space2: css`
     margin-right: 4px;
+  `,
+  text3Space3: css`
+    margin-right: 12px;
   `,
   text3Margin: css`
     margin-bottom: 40px;
@@ -208,7 +211,7 @@ const classes = {
     flex-shrink: 0;
   `,
   divider: css`
-    width: 64%;
+    width: 40%;
     height: 1px;
     flex-shrink: 0;
     background-color: ${gold};
