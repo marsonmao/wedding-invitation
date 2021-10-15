@@ -9,32 +9,36 @@ function App() {
     <div className={classes.root}>
       <img src={bg_src} className={classes.image} alt="-" />
       <div className={classes.logoMask}></div>
-      <Ohm className={classes.logo} />
+      {/* <Ohm className={classes.logo} /> */}
+      <div className={classes.logo}>ௐ</div>
       <div className={classes.centerBlock}>
         <div className={classes.mask}></div>
         <div className={classes.topSection}>
           <div className={classes.topSectionCell}>
             {/* <span className={classes.title1}>新郎</span> */}
             <span className={classes.text1}>毛璽樹</span>
+            <span className={classes.text1Margin} />
             {/* <span className={classes.title2}>男方家長</span> */}
-            <span className={classes.text2}>毛佛南-韓綺芸</span>
+            <span className={classes.text2}>毛佛南 韓綺芸</span>
           </div>
           <div className={classes.topSectionCellGap} />
           <div className={classes.topSectionCell}>
             {/* <span className={classes.title1}>新娘</span> */}
             <span className={classes.text1}>黃詩雅</span>
+            <span className={classes.text1Margin} />
             {/* <span className={classes.title2}>女方家長</span> */}
-            <span className={classes.text2}>黃永祥-蘇靖園</span>
+            <span className={classes.text2}>黃永祥 蘇靖園</span>
           </div>
         </div>
         <div className={classes.divider}></div>
         <div className={classes.bottomSection}>
-          <span className={classes.text3}>2021.12-12.1202</span>
+          <span className={classes.text3}>2021.12.12</span>
           <span className={classes.text3}>優聖美地</span>
-          <span className={classes.text3}>新北市新店區屈尺里石厝路10號</span>
-          <span className={classes.text3}>2666-3507</span>
+          <span className={classes.text3Margin} />
+          <span className={classes.text4}>新北市新店區屈尺里石厝路十號</span>
+          <span className={classes.text4}>2666-3507</span>
         </div>
-      </div>      
+      </div>
     </div>
   );
 }
@@ -45,6 +49,8 @@ const grey = '#a8a8a8';
 const red = '#c40f24';
 const gold = '#e2c08b';
 const opacity = 0.99;
+const logoSize = 80;
+const rootWidth = 1200;
 
 const classes = {
   // title1: css`
@@ -58,6 +64,8 @@ const classes = {
     font-weight: 500;
     line-height: 36px;
     letter-spacing: 2px;
+  `,
+  text1Margin: css`
     margin-bottom: 48px;
   `,
   // title2: css`
@@ -79,9 +87,19 @@ const classes = {
     line-height: 40px;
     letter-spacing: 2px;
   `,
+  text3Margin: css`
+    margin-bottom: 40px;
+  `,
+  text4: css`
+    font-size: 24px;
+    color: ${gold};
+    font-weight: 200;
+    line-height: 40px;
+    letter-spacing: 2px;
+  `,
   ////
   root: css`
-    width: 100%;
+    width: ${rootWidth}px;
     height: 100%;
     position: relative;
     font-family: 'NotoSerifTC';
@@ -98,14 +116,20 @@ const classes = {
   logo: css`
     position: absolute;
     top: 163px;
-    left: 545px;
-    width: 110px;
-    height: 110px;
+    left: calc(${rootWidth * 0.5}px - ${logoSize * 0.5}px + ${logoSize * 0.15}px);
+    width: ${logoSize}px;
+    height: ${logoSize}px;
+    // For svg
     fill: currentColor;
     color: ${gold};
+    // For text
+    font-size: ${logoSize}px;
+    line-height: ${logoSize}px;
+    font-family: 'NotoSerifTamil';
+    font-weight: 100;
   `,
   image: css`
-    width: 1200px;
+    width: ${rootWidth}px;
     height: auto;
     position: absolute;
     top: 0px;
@@ -121,7 +145,7 @@ const classes = {
     left: 334px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
   `,
   mask: css`
@@ -141,6 +165,8 @@ const classes = {
     flex-direction: row;
     justify-content: center;
     align-items: flex-start;
+    margin-top: 60px;
+    margin-bottom: 72px;
   `,
   topSectionCell: css`
     width: 50%;
@@ -155,11 +181,11 @@ const classes = {
     flex-shrink: 0;
   `,
   divider: css`
-    width: 100%;
+    width: 40%;
     height: 1px;
+    flex-shrink: 0;
     background-color: ${gold};
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 12px;
   `,
   bottomSection: css`
     display: flex;

@@ -53,3 +53,21 @@ code {
   src: local('NotoSerifTC'), url(./fonts/NotoSerifTC-Black.otf) format('opentype');
   font-weight: 900;
 }
+
+@font-face {
+  font-family: 'NotoSerifTamil';
+  src: local('NotoSerifTamil'), url(./fonts/NotoSerifTamil-Thin.ttf) format('truetype');
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: 'NotoSerifTamil';
+  src: local('NotoSerifTamil'), url(./fonts/NotoSerifTamil-ExtraLight.ttf) format('truetype');
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: 'NotoSerifTamil';
+  src: local('NotoSerifTamil'), url(./fonts/NotoSerifTamil-Light.ttf) format('truetype');
+  font-weight: 300;
+}
