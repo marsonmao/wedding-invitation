@@ -32,11 +32,19 @@ function App() {
         </div>
         <div className={classes.divider}></div>
         <div className={classes.bottomSection}>
-          <span className={cx(classes.text3, classes.textNumber)}>2021.12.12</span>
-          <span className={classes.text3}>優聖美地</span>
+          <div className={classes.text3Wrap}>
+            <span className={cx(classes.text3, classes.text3Number, classes.text3Space1)}>2021.12.12</span>
+            <span className={cx(classes.text3)}>優聖美地</span>
+          </div>
+          <div className={classes.text3Wrap}>
+            <span className={cx(classes.text3, classes.text3Number, classes.text3Space2)}>11</span>
+            <span className={cx(classes.text3, classes.text3Space2)}>證婚</span>
+            <span className={cx(classes.text3, classes.text3Number, classes.text3Space2)}>12</span>
+            <span className={cx(classes.text3)}>吃飯</span>
+          </div>
           <span className={classes.text3Margin} />
           <span className={classes.text4}>新北市新店區屈尺里石厝路十號</span>
-          <span className={cx(classes.text4, classes.textNumber)}>2666-3507</span>
+          <span className={cx(classes.text4, classes.text4Number)}>2666-3507</span>
         </div>
       </div>
     </div>
@@ -61,7 +69,7 @@ const classes = {
   text1: css`
     font-size: 34px;
     color: ${gold};
-    font-weight: 500;
+    font-weight: 700;
     line-height: 36px;
     letter-spacing: 2px;
   `,
@@ -76,16 +84,31 @@ const classes = {
   text2: css`
     font-size: 32px;
     color: ${gold};
-    font-weight: 200;
+    font-weight: 400;
     line-height: 36px;
     letter-spacing: 2px;
+  `,
+  text3Wrap: css`
+    display: flex;
+    align-items: baseline;
   `,
   text3: css`
     font-size: 28px;
     color: ${gold};
-    font-weight: 200;
+    font-weight: 400;
     line-height: 40px;
     letter-spacing: 2px;
+  `,
+  text3Number: css`
+    font-family: 'Optima';
+    font-weight: 400;
+    font-size: 30px;
+  `,
+  text3Space1: css`
+    margin-right: 12px;
+  `,
+  text3Space2: css`
+    margin-right: 4px;
   `,
   text3Margin: css`
     margin-bottom: 40px;
@@ -93,11 +116,11 @@ const classes = {
   text4: css`
     font-size: 24px;
     color: ${gold};
-    font-weight: 200;
+    font-weight: 400;
     line-height: 40px;
     letter-spacing: 2px;
   `,
-  textNumber: css`
+  text4Number: css`
     font-family: 'Optima';
     font-weight: 400;
   `,
@@ -130,7 +153,7 @@ const classes = {
     font-size: ${logoSize}px;
     line-height: ${logoSize}px;
     font-family: 'NotoSerifTamil';
-    font-weight: 100;
+    font-weight: 200;
   `,
   image: css`
     width: ${rootWidth}px;
@@ -185,7 +208,7 @@ const classes = {
     flex-shrink: 0;
   `,
   divider: css`
-    width: 40%;
+    width: 64%;
     height: 1px;
     flex-shrink: 0;
     background-color: ${gold};
