@@ -1,5 +1,5 @@
 import './App.css';
-import { css } from "@emotion/css";
+import { css, cx } from "@emotion/css";
 import { ReactComponent as Ohm } from './ohm_tamil.svg';
 
 const bg_src = process.env.NODE_ENV === 'development' ? 'wedding-invitation/wed_inv.png' : 'wed_inv.png';
@@ -32,11 +32,11 @@ function App() {
         </div>
         <div className={classes.divider}></div>
         <div className={classes.bottomSection}>
-          <span className={classes.text3}>2021.12.12</span>
+          <span className={cx(classes.text3, classes.textNumber)}>2021.12.12</span>
           <span className={classes.text3}>優聖美地</span>
           <span className={classes.text3Margin} />
           <span className={classes.text4}>新北市新店區屈尺里石厝路十號</span>
-          <span className={classes.text4}>2666-3507</span>
+          <span className={cx(classes.text4, classes.textNumber)}>2666-3507</span>
         </div>
       </div>
     </div>
@@ -96,6 +96,10 @@ const classes = {
     font-weight: 200;
     line-height: 40px;
     letter-spacing: 2px;
+  `,
+  textNumber: css`
+    font-family: 'Optima';
+    font-weight: 400;
   `,
   ////
   root: css`
