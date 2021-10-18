@@ -131,7 +131,7 @@ const classes = {
     width: ${rootWidth}px;
     height: 100%;
     position: relative;
-    font-family: 'NotoSerifTC';
+    font-family: 'Kozuka';
   `,
   logoMask: css`
     position: absolute;
