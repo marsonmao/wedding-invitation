@@ -33,7 +33,7 @@ function App() {
         <div className={classes.divider}></div>
         <div className={classes.bottomSection}>
           <div className={classes.text3Wrap}>
-            <span className={cx(classes.text3, classes.text3Number, classes.text3Space1, classes.text3Date)}>2021.12.12</span>
+            <span className={cx(classes.text3, classes.text3Number, classes.text3Date)}>2021.12.12</span>
           </div>
           <div className={classes.text3Wrap}>
             <span className={cx(classes.text3, classes.text3Number, classes.text3Space2, classes.text3Time)}>11:00</span>
@@ -103,12 +103,12 @@ const classes = {
   `,
   text3Date: css`
     font-weight: 400;
-    font-size: 34px;
+    font-size: 32px;
     letter-spacing: 4px;
   `,
   text3Time: css`
     font-weight: 400;
-    font-size: 34px;
+    font-size: 32px;
     letter-spacing: 2px;
   `,
   text3Space1: css`
