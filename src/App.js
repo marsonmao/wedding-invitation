@@ -33,12 +33,12 @@ function App() {
         <div className={classes.divider}></div>
         <div className={classes.bottomSection}>
           <div className={classes.text3Wrap}>
-            <span className={cx(classes.text3, classes.text3Number, classes.text3Space1)}>2021.12.12</span>
+            <span className={cx(classes.text3, classes.text3Number, classes.text3Space1, classes.text3Date)}>2021.12.12</span>
           </div>
           <div className={classes.text3Wrap}>
-            <span className={cx(classes.text3, classes.text3Number, classes.text3Space2)}>11:00</span>
+            <span className={cx(classes.text3, classes.text3Number, classes.text3Space2, classes.text3Time)}>11:00</span>
             <span className={cx(classes.text3, classes.text3Space2, classes.text3Space3)}>證婚</span>
-            <span className={cx(classes.text3, classes.text3Number, classes.text3Space2)}>12:00</span>
+            <span className={cx(classes.text3, classes.text3Number, classes.text3Space2, classes.text3Time)}>12:00</span>
             <span className={cx(classes.text3)}>吃喝</span>
           </div>
           <span className={classes.text3Margin} />
@@ -83,7 +83,7 @@ const classes = {
   text2: css`
     font-size: 32px;
     color: ${gold};
-    font-weight: 400;
+    font-weight: 500;
     line-height: 36px;
     letter-spacing: 2px;
   `,
@@ -100,8 +100,16 @@ const classes = {
   `,
   text3Number: css`
     font-family: 'Optima';
+  `,
+  text3Date: css`
     font-weight: 400;
-    font-size: 30px;
+    font-size: 34px;
+    letter-spacing: 4px;
+  `,
+  text3Time: css`
+    font-weight: 400;
+    font-size: 34px;
+    letter-spacing: 2px;
   `,
   text3Space1: css`
     margin-right: 12px;
