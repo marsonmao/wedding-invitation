@@ -53,10 +53,9 @@ function App() {
 
 export default App;
 
-const grey = '#a8a8a8';
 const red = '#c40f24';
 const gold = '#e2c08b';
-const opacity = 0.99;
+const opacity = 1.0;
 const logoSize = 80;
 const rootWidth = 1200;
 
@@ -145,7 +144,7 @@ const classes = {
   `,
   logo: css`
     position: absolute;
-    top: 163px;
+    top: 144px;
     left: calc(${rootWidth * 0.5}px - ${logoSize * 0.5}px + ${logoSize * 0.15}px);
     width: ${logoSize}px;
     height: ${logoSize}px;
@@ -195,8 +194,8 @@ const classes = {
     flex-direction: row;
     justify-content: center;
     align-items: flex-start;
-    margin-top: 60px;
-    margin-bottom: 72px;
+    margin-top: 40px;
+    margin-bottom: 60px;
   `,
   topSectionCell: css`
     width: 50%;
