@@ -1,8 +1,7 @@
 import './App.css';
 import { css, cx } from "@emotion/css";
-import { ReactComponent as Ohm } from './ohm_tamil.svg';
 
-const bg_src = process.env.NODE_ENV === 'development' ? 'wedding-invitation/wed_inv.png' : 'wed_inv.png';
+const bg_src = `${import.meta.env.BASE_URL}wed_inv.png`;
 
 function App() {
   return (
